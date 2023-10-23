@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Letter Generator</title>
+    <script>
+        function generateRandomLetter() {
+            var letters = 'ABCDEFG';
+            var randomIndex = Math.floor(Math.random() * letters.length);
+            var randomLetter = letters.charAt(randomIndex);
+            document.getElementById('random-letter').innerHTML = randomLetter;
+        }
+    </script>
+</head>
+<body>
+    <h1>Random Letter Generator</h1>
+    <button onclick="generateRandomLetter()">Generate Random Letter</button>
+    <p>Random Letter: <span id="random-letter"></span></p>
+</body>
+</html>
